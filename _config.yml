@@ -1,0 +1,71 @@
+baseurl:
+url: https://yangjava.github.io
+title: yangjava
+subtitle: "Talk is cheap, show me the code"
+description: "yangjava's personal page"
+date_format: "ordinal"
+# timezone: Asia/Hangzhou
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+author: 杨京京
+organization: oschina
+organization_url: https://my.oschina.net/u/1398304
+github_username: yangjava
+location: Hangzhou, China
+email: yangjava2014@163.com
+
+# Navigation
+navs:
+  -
+    href: /
+    label: Homepage
+
+
+  -
+    href: /categories/
+    label: Blogs
+
+
+  # -
+  #   href: /links/
+  #   label: Links
+
+# RSS
+subscribe_rss: /feed.xml
+
+# Jekyll
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: yangjava/yangjava.github.io
+
+# Search
+simple_jekyll_search:
+    fulltext: false # full text search enable
+    limit: 10 # limitation of the search results to show
+
+# Analytics
+google:
+    analytics_id: UA-80669434-1
+github: [metadata]
